@@ -1,2 +1,15 @@
 # CSS-only-Animation
-I want make the Motion Graphic by CSS.
+
+**前提：jQueryは使わない**
+
+cssを極めたいがためのrepositoryです  
+不定期でcss only animationに挑戦します  
+最終的には Motion Gprahics作れるようになりたい  
+
+# プロジェクト一覧
+
+作成順で一番上が最新の作品です。
+
+| レポジトリ | 日時 | 感想 |
+| - | - | - |
+|[FirstProject_Test](https://github.com/JPNYKW/CSS-only-Animation/tree/master/FirstProject_Test) | 2018.08.24 | 愉しい(Nancy...) |
