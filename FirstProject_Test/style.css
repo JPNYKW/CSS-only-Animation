@@ -1,0 +1,160 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+
+    to { opacity: 1; }
+}
+
+@keyframes feedOut {
+      from { opacity: 1; }
+      to { opacity: 0; }
+}
+
+@keyframes moveToRight {
+      from {
+            position: relative;
+            left: 0px;
+      }
+
+      to {
+            position: relative;
+            left: 500px;
+      }
+}
+
+@keyframes rotateToRight1 {
+      from { transform: rotate(135deg); }
+
+      to { transform: rotate(0deg); }
+}
+
+@keyframes rotateToRight2 {
+      from { transform: rotate(0deg); }
+
+      to { transform: rotate(45deg); }
+}
+
+@keyframes rotateToRight3 {
+      from { transform: rotate(45deg); }
+      to { transform: rotate(360deg); }
+}
+
+@keyframes b2ToSmall {
+      from {
+            transform-origin: center;
+            transform: scale(1, 1);
+      }
+
+      to {
+            transform-origin: center;
+            transform: scale(0, 0);
+      }
+}
+
+@keyframes slideToLeft {
+      from { transform: translateX(0px); }
+
+      to { transform: translateX(-400px); }
+}
+
+@keyframes slideToRight {
+      from { transform: translateX(0px); }
+      to { transform: translateX(200px); }
+}
+
+@keyframes textMotion1 {
+      from {
+            opacity: 0;
+            left: 200px;
+      }
+
+      to {
+            opacity: 1;
+            left: 430px;
+      }
+}
+
+@keyframes textMotion2 {
+      from {
+            opacity: 1;
+            top: -290px;
+      }
+
+      to {
+            opacity: 0;
+            top: -190px;
+      }
+}
+
+body {
+      color: #2c2c2c;
+      font-family: Arial;
+
+      overflow: hidden;
+}
+
+.container {
+      position: absolute;
+      left: 360px;
+      top: 400px;
+}
+
+.b {
+      width: 100px;
+      height: 100px;
+}
+
+.b2 {
+      position: relative;
+      left: 507px;
+      top: -107px;
+}
+
+.box-1 {
+      opacity: 0;
+      position: relative;
+      border: solid 7px #313131;
+
+      animation: fadeIn 1.1s forwards .5s,
+                 moveToRight .91s forwards .5s,
+                 rotateToRight1 .91s forwards .5s,
+                 rotateToRight2 .32s forwards 2.1s,
+                 rotateToRight3 2.1s forwards 2.86s,
+                 feedOut .48s forwards 2.9s;
+
+      z-index: 3;
+}
+
+.box-2 {
+      background: white;
+
+      animation: b2ToSmall .4s forwards 1.6s,
+                 slideToLeft .58s forwards 3s;
+
+      z-index: 2;
+}
+
+.box-3 {
+      top: -207px;
+      background: #313131;
+
+      animation: rotateToRight2 .32s forwards 2.1s,
+                 slideToLeft .71s forwards 2.8s,
+                 feedOut .66s forwards 3s;
+
+      z-index: 1;
+}
+
+.text-1 {
+      text-align: center;
+      font-size: 50px;
+      opacity: 0;
+
+      position: relative;
+      top: -290px;
+      left: 230px;
+
+      animation: textMotion1 1.18s forwards 3s,
+                 textMotion2 .4s forwards 4.7s;
+
+      z-index: 5;
+}
