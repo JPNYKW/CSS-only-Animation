@@ -1,0 +1,20 @@
+body {
+      font-family: Arial;
+      background: #F2F2F2;
+}
+
+h1 {
+      width: 400px;
+      padding-bottom: 5px;
+      border-bottom: solid 2px #BABABA;
+}
+
+.project {
+      padding-left: 10px;
+      border-left: solid 3px #BABABA;
+}
+
+.project a {
+      font-weight: bold;
+      color: #0055ff;
+}
